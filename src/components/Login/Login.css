@@ -1,0 +1,729 @@
+.app {
+  background-image: url('../../characters/bg3.png');
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.random {
+  width: min-content;
+  display: flex;
+  align-items: center;
+  flex: row;
+  height: 40rem;
+  margin-left: 15%;
+  margin-top: 1%;
+  backdrop-filter: blur(8px) saturate(200%);
+  -webkit-backdrop-filter: blur(8px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#logoContainer {
+  color: whitesmoke;
+  position: relative;
+  top: 1%;
+  margin-left: 38%;
+}
+
+#logo {
+  font-size: 2.5rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:invalid {
+  animation: justshake 0.3s forwards;
+  color: red;
+}
+
+/* The container */
+.container {
+  margin-left: 5px;
+  display: block;
+  flex-direction: row;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 5.5px;
+  left: 5.5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+}
+
+#occupation {
+  position: relative;
+  left: -0.9rem;
+  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
+}
+
+#experience {
+  position: relative;
+  left: -1.5rem;
+  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
+}
+
+select {
+  margin-top: 0.5rem;
+
+}
+
+input[type="date"] {
+  font-family: "Roboto Mono", monospace;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  padding-left: 3px;
+  padding-right: 3px;
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  border-radius: 70px !important;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px !important;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nextPage {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  position: relative;
+  left: 16rem;
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 550;
+  border-bottom: 1px solid #4e4e4e;
+}
+
+.prevPage {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  position: relative;
+  left: 10rem;
+  top: 2.1rem;
+  border-bottom: 1px solid #4e4e4e;
+  font-size: 16px;
+  font-weight: 550;
+  left: 16rem;
+}
+
+.prevPageW {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  position: relative;
+  left: 10rem;
+  margin-top: -1.1rem;
+  color: #f92e2e;
+  border-bottom: 1px solid #4e4e4e;
+  font-size: 16px;
+  font-weight: 550;
+  left: 1rem;
+}
+
+.nextPage:hover,
+.prevPage:hover {
+  cursor: pointer;
+}
+
+.form {
+  margin-left: -2rem;
+}
+
+.login-form {
+  height: 89.5%;
+  overflow: hidden;
+  position: relative;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 20rem;
+  background-color: white;
+  padding: 2rem;
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title1 {
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-top: 10rem;
+  margin-left: 33%;
+}
+
+.title2 {
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-left: 33%;
+  margin-top: -5%;
+
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 8px;
+}
+
+
+/* LOGIN SIGNUP TOGGLE */
+.toggles {
+
+  display: flex;
+  flex-direction: row;
+  gap: 18%;
+  position: relative;
+  left: -1rem;
+}
+
+.signUpToggle {
+  width: 8rem;
+  margin-top: 1.5rem;
+}
+
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 8rem;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.button-10 .knobs:before,
+.button-10 .knobs:after,
+.button-10 .knobs span {
+  position: absolute;
+  top: 4px;
+  width: 3.5rem;
+  height: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  border-radius: 2px;
+  transition: 0.5s ease all;
+}
+
+.button-10 .knobs:before {
+  content: '';
+  left: 4px;
+  background-color: #01d28e;
+}
+
+.button-10 .knobs:after {
+  right: 2px;
+  color: #4e4e4e;
+}
+
+#b1 .knobs:after {
+  content: 'Sign Up';
+}
+
+#b2 .knobs:after {
+  right: 1px;
+  content: 'Worker';
+}
+
+.button-10 .knobs span {
+  display: inline-block;
+  left: 4px;
+  color: #fff;
+  z-index: 1;
+}
+
+.button-10 .checkbox:checked+.knobs span {
+  color: #4e4e4e;
+}
+
+.button-10 .checkbox:checked+.knobs:before {
+  left: 3.8rem;
+  background-color: #01d28e;
+}
+
+.button-10 .checkbox:checked+.knobs:after {
+  color: #fff;
+}
+
+.button-10 .checkbox:checked~.layer {
+  background-color: #ebf7fc;
+}
+
+/* SIGN UP FORM */
+
+#City {
+  position: relative;
+  left: -2.8rem;
+}
+
+#phone {
+  width: 50%;
+}
+
+.multipleFields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+}
+
+#dob {
+  width: 50%;
+}
+
+#gender {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 5.75rem;
+}
+
+#cnic {
+  width: 50%;
+}
+
+#firstname {
+  width: 50%;
+}
+
+#lastname {
+  width: 50%;
+}
+
+#pass {
+  width: 50%;
+}
+
+#confpass {
+  width: 50%;
+}
+
+#uname {
+  width: 50%;
+}
+
+#email {
+  width: 50%;
+}
+
+#house {
+  width: 50%;
+}
+
+#street {
+  width: 50%;
+}
+
+#price {
+  width: 50%;
+}
+
+#desc {
+  width: 50%;
+}
+
+/* CHARACTERS */
+
+#characters {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15%;
+  height: 230px;
+  width: 600px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23a2d9ff' fill-opacity='1' d='M0,320L40,293.3C80,267,160,213,240,170.7C320,128,400,96,480,101.3C560,107,640,149,720,186.7C800,224,880,256,960,229.3C1040,203,1120,117,1200,90.7C1280,64,1360,96,1400,112L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 10px;
+}
+
+.character {
+  position: relative;
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+
+  animation-fill-mode: both;
+}
+
+#taylor {
+  margin-top: 9%;
+  margin-left: 1%;
+
+  max-width: 120px;
+  max-height: 120px;
+  animation-name: taylor;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+}
+
+#electrician {
+  max-width: 170px;
+  max-height: 170px;
+  margin-left: 1%;
+  animation-name: electrician;
+  animation-delay: 0.4s;
+  animation-duration: 1s;
+}
+
+#carpenter {
+  margin-top: 10%;
+  max-width: 125px;
+  max-height: 125px;
+
+  animation-name: carpenter;
+  animation-delay: 0.3s;
+  animation-duration: 1s;
+}
+
+#cleaner1 {
+  margin-left: 2%;
+  max-width: 150px;
+  max-height: 140px;
+
+  animation-name: cleaner1;
+  animation-delay: 0.4s;
+  animation-duration: 1s;
+}
+
+#cleaner2 {
+  margin-left: 1%;
+  margin-top: 10%;
+  max-width: 120px;
+  max-height: 120px;
+
+  animation-name: cleaner2;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+}
+
+
+@keyframes move {
+  from {
+    margin-top: 10%;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes carpenter {
+  from {
+    top: 115px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cleaner1 {
+  from {
+    left: -115px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cleaner2 {
+  from {
+    top: -115px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes electrician {
+  from {
+    left: 115px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes taylor {
+  from {
+    top: 115px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes justshake {
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX-(5px);
+  }
+}
+
+
+/* FORM TRANSITION */
+/* ENTER */
+.login-form-enter {
+  opacity: 0;
+}
+
+.login-form-enter-active {
+  opacity: 1;
+  transition: opacity 800ms;
+}
+
+.login-form-enter-done {
+  opacity: 1;
+}
+
+/* EXIT */
+.login-form-exit {
+  opacity: 0;
+}
+
+.login-form-exit-active {
+  opacity: 1;
+  transition: opacity 800ms;
+}
+
+.login-form-exit-done {
+  opacity: 1;
+}
+
+.hideDisplay {
+  display: none !important;
+}
+
+/* ALERT BOX */
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  /* Red */
+  color: white;
+  margin-bottom: 15px;
+  width: fit-content;
+  border-radius: 12px;
+  position: absolute;
+  margin-left: 36rem;
+  z-index: 100;
+}
+
+.alert2 {
+  background-color: #0a6d30 !important;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+/* INPUT TEXTFIELDS CSS */
+
+.Input {
+  line-height: 28px;
+  border: 2px solid transparent !important;
+  border-bottom-color: #777 !important;
+  padding: .2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: #0d0c22;
+  transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.Input:focus,
+Input:hover {
+  outline: none;
+  padding: .2rem 1rem;
+  border-radius: 1rem;
+  border-color: #7a9cc6 !important;
+}
+
+.Input::placeholder {
+  color: #777;
+}
+
+.Input:focus::placeholder {
+  opacity: 0;
+  transition: opacity .3s;
+}

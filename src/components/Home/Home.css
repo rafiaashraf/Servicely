@@ -1,0 +1,536 @@
+#mainSection {
+    display: block;
+    background: rgb(217, 236, 233);
+    margin-top: 4.5rem;
+    margin-bottom: 2.8rem;
+    height: 100%;
+}
+
+/* ...................Customer Profile Section.................... */
+
+
+.profile-btn-container {
+    width: 4rem;
+    height: 4rem;
+    justify-content: right;
+    margin-right: 5rem;
+    margin-left: auto;
+
+}
+
+.profile-icon {
+    padding-top: 1rem;
+    width: 100%;
+    height: 4rem;
+    color: black;
+}
+
+.profile-card {
+    width: 20rem;
+    background-color: whitesmoke;
+    justify-content: center;
+    place-content: center;
+    margin-top: 4rem;
+    padding-top: 0.01rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 4px 4px 2px 1px rgba(86, 99, 97, 0.23);
+
+}
+
+.circle-avatar {
+    display: grid;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(171, 170, 170);
+    place-items: center;
+    align-self: center;
+    margin: 2rem auto;
+
+
+}
+
+
+.profile-div {
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+}
+
+
+.profile-btn {
+    width: 100%;
+    height: 2rem;
+    font-size: 0.9rem;
+    background: none;
+    border: none;
+}
+
+.profile-btn:hover {
+    background-color: darkgrey;
+}
+
+
+/* ---------------------Review DIv------------------------------ */
+.review-div {
+    position: absolute;
+    z-index: 100;
+    display: block;
+    width: 40%;
+    margin-left: 25rem;
+    margin-top: -3rem;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 4px 4px 2px 1px rgba(86, 99, 97, 0.23);
+    height: 42rem;
+    overflow-y: auto;
+
+}
+
+.no-review {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.imgnoreview {
+    width: 50%;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+.review-card {
+    margin: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.close-div {
+    width: 100%;
+    justify-content: right;
+}
+
+.close-icon {
+    height: 2rem;
+    width: 15%;
+    color: red;
+    margin-left: 34rem;
+    margin-top: 2px;
+}
+
+.review-div h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.review-div h4 {
+    margin: 0.5rem;
+}
+
+.form-div {
+    margin: 0.5rem;
+
+}
+
+.lblreview {
+    text-align: top;
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+.rating-select {
+    width: 70%;
+    margin: 0.2rem;
+
+}
+
+#submit {
+
+    margin-left: 17rem;
+    margin-top: 2rem;
+}
+
+/*-------------------------- About Section----------------------------- */
+
+.aboutSection {
+    width: 95%;
+    margin: 0rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+
+}
+
+.contentBox {
+    width: 50%;
+    padding-left: 1rem;
+}
+
+
+.aboutSection h1 {
+    font-size: 2.5rem;
+    color: hsl(177, 51%, 14%);
+    text-align: center;
+}
+
+.contentBox p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+
+}
+
+.imgContainer {
+    background-image: url('../../characters/blobbg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: fit-content;
+    display: block;
+
+}
+
+.imgContainer img {
+    margin: 0 auto;
+
+}
+
+
+
+/*--------------------------------- Service Section==--------------------------- */
+.services {
+    width: 95%;
+    margin: 5rem auto 0 auto;
+    display: block;
+    justify-content: center;
+    padding: auto;
+}
+
+.services h1 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: hsl(177, 51%, 14%);
+    text-align: center;
+
+}
+
+.flex-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+
+}
+
+/* -----------Service Card---------------------- */
+.card {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    padding: auto;
+    margin: 2rem auto;
+    border: 2px solid #072528;
+    background-color: hsl(176, 83%, 11%);
+    border-radius: 12px;
+    box-shadow: 4px 4px 2px 1px rgba(86, 99, 97, 0.23);
+    transition: 0.3s;
+    animation: ease-in;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-img-container {
+    width: 100%;
+}
+
+.serviceCardImage {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card h2 {
+    padding-top: 1rem;
+    color: #fff;
+}
+
+.card p {
+    margin: 1rem auto;
+    color: #fff;
+}
+
+.btnBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.btn {
+    border: 2px solid;
+    border-radius: 2rem;
+    background-image: linear-gradient(rgb(175, 209, 208), rgb(71, 123, 133));
+    background-image: (circle at bottom right, purple, orange);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+}
+
+.btn:hover {
+    background-color: aquamarine;
+}
+
+.btnText {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: hsl(176, 83%, 11%);
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------Contact------------------------- */
+.contact {
+    width: 100%;
+    margin: 5rem auto 0 auto;
+    display: block;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: auto;
+    margin: 1rem auto;
+}
+
+.mid-card {
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+}
+
+.icon {
+    width: 100%;
+    height: 3rem;
+    color: white;
+}
+
+.contact h1 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+
+}
+
+.contact-card h2 {
+    color: white;
+    margin-top: 1rem;
+}
+
+.contact p {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+
+
+/* CHARACTERS */
+
+#char1 {
+    position: relative;
+    top: -20px;
+    left: 15px;
+    max-width: 280px;
+    max-height: 250px;
+
+    animation-name: char1;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+
+#char2 {
+    position: relative;
+    top: 8px;
+    max-width: 200px;
+    max-height: 200px;
+
+    animation-name: char2;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+
+#char3 {
+    position: relative;
+    top: -20px;
+    left: -10px;
+    max-width: 200x;
+    max-height: 220px;
+    animation-name: char3;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+
+#char4 {
+    max-width: 150px;
+    max-height: 200px;
+    animation-name: char4;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+
+
+@keyframes char1 {
+    from {
+        position: relative;
+        left: -115px;
+        opacity: 0;
+    }
+
+    to {
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes char2 {
+    from {
+        position: relative;
+        top: -115px;
+        opacity: 0;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes char3 {
+    from {
+        position: relative;
+        left: 115px;
+        opacity: 0;
+    }
+
+    to {
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes char4 {
+    from {
+        position: relative;
+        top: 115px;
+        opacity: 0;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media screen and (max-width:768px) {
+    .aboutSection {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .contentBox {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .imgContainer {
+        width: fit-content;
+    }
+
+    .flex-grid {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        column-gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .imgContainer {
+        width: 60%;
+    }
+
+
+    .flex-grid {
+        display: block;
+    }
+
+    .contact-grid {
+        display: block;
+    }
+
+    .mid-card {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        width: 90%;
+
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    .card {
+        width: 70%;
+
+    }
+}
